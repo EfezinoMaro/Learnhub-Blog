@@ -1,0 +1,112 @@
+
+    /* SETTING PADDING & MARGIN OF ALL ELEMENT ZERO */
+    *{
+        padding: 0; 
+        margin: 0;
+    }
+    #container{
+        background-image: url("Home2.jpg");
+        height: 100vh;
+        /* Sets the image to occupy the div */
+        background-size: cover;
+        /* Reducing the brightness of the background image */
+        background-color: rgba(0, 0, 0, 0.719);
+        background-blend-mode: color-burn;
+    }
+    nav{
+        /* switch background color to black and sets box shadow to white */
+        background-color: rgba(0, 0, 0, 0.384);
+        box-shadow: 5px 5px 10px rgba(199, 199, 199, 0.199);
+        /* Setting height to automatically fit with content */
+        height: auto;
+        /* Positioning list items to center */
+        text-align: center;
+    }
+    li{
+        /* Aligning list items horizontally */
+        display:inline-block;
+        /* distribute spacing around li text */
+        padding-top: 20px ;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    nav ul li a{
+        /* sets color to white(default is blue) */
+        color: white;
+        /* removes the underline from the anchor tag */
+        text-decoration: none;
+        /* increasing font size */
+        font-size: 22px;
+        /* Changing font family */
+        font-family:'Courier New', Courier, monospace;
+        /* Speed in which the hover effect will take place */
+        transition: 0.5s;
+    }
+      /* Sets color of link to goldenrod whenever a user mouse over it */
+    nav ul li a:hover{
+        color: goldenrod;
+    }
+    .one{
+        /* set width to 40% of the user screen */
+        width: 40%; 
+        /* add space the top and left of the div */
+        margin-top:30vh;
+        margin-left: 10vh;
+        color: white;
+        /* align the div to extreme of left */
+        float: left;
+    }
+    .one h2{
+        /* increasing font size */
+        font-size: 70px;
+        /* Changing font family */
+        font-family:'Courier New', Courier, monospace;
+    }
+    button{
+        /* Pushes the button down from the text */
+        margin-top: 10px;
+        background-color: goldenrod;
+        /* Sets an unseen stroke round the button */
+        border:1px solid transparent;
+        /* applies space of 10px around(top,right,bottom,left) inside the button */
+        padding: 10px;
+        /* change cursor from default to pointer */
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    button:hover{
+        background-color: transparent;
+        color: white;
+        border:1px solid goldenrod;
+    } 
+    /* STYLE FOR FORM */
+    form{
+        width: 30%;
+        float: right;
+        margin-top:30vh;
+        margin-right: 10vh;
+        color: white;
+    }
+    legend{
+        margin-left: 10px;
+        color: goldenrod;
+        font-size: 25px;
+        font-family: Impact;
+    }
+    input,textarea{
+        display: block;
+        height: 20px;
+        /* occupies 70% of the width of the form */
+        width: 70%;
+        /* sets top & bottom to 25 then left & right to auto */
+        margin: 25px auto;
+        padding: 5px;
+    }
+    textarea{
+        height: 100px;
+    }
+    input[type="submit"]{
+        height: 30px;
+        width: 50%;
+    }
